@@ -54,15 +54,14 @@
     /* 0 to 499 */
     #homePageBackgroundImageDivStyled {
       background-image: url('{{ $tiny.RelPermalink }}');
-      background-size: 100% 10%; /* Reduce background image size */
       background-position: top;
+      background-repeat: no-repeat;
       height: 20vh; /* Reduce height to 20% of the viewport */
     }
     /* 500 to 800 */
     @media (min-width: 500px) and (max-width: 800px) {
       #homePageBackgroundImageDivStyled {
         background-image: url('{{ $small.RelPermalink }}');
-        background-size: 100% 50%;
         background-position: top;
         height: 30vh;
       }
@@ -71,16 +70,14 @@
     @media (min-width: 801px) and (max-width: 1200px) {
       #homePageBackgroundImageDivStyled {
         background-image: url('{{ $medium.RelPermalink }}');
-        background-size: 100% 50%; /* Reduce background image size */
         background-position: top;
-        height: 30vh; /* Same reduced height */
+        height: 40vh; /* Same reduced height */
       }
     }
     /* 1201 to 1500 */
     @media (min-width: 1201px) and (max-width: 1500px) {
       #homePageBackgroundImageDivStyled {
         background-image: url('{{ $large.RelPermalink }}');
-        background-size: 100% 50%; /* Slightly larger background */
         background-position: top;
         background-repeat: no-repeat;
         height: 30vh; /* Keep reduced height */
@@ -90,9 +87,8 @@
     @media (min-width: 1501px) {
       #homePageBackgroundImageDivStyled {
         background-image: url('{{ $src.RelPermalink }}');
-        background-size: 100% 50%; /* A bit larger for large screens */
         background-position: top;
-        height: 50vh; /* Maintain reduced height */
+        height: 30vh; /* Maintain reduced height */
       }
     }
   </style>
