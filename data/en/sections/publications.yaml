@@ -1,0 +1,86 @@
+# section information
+section:
+  name: Publications
+  id: publications
+  enable: true
+  weight: 6
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# filter buttons
+
+# your publications
+publications:
+- title: "When Quantization Affects Confidence of Large Language Models?"
+  publishedIn:
+    name: "NAACL 2024"
+    date: June 2024
+    url: https://aclanthology.org/2024.findings-naacl.124/
+  authors:  
+  - name: "Irina Proskurina"
+  - name: "Luc Brun"
+  # url: https://example.com  # Allows for links to other authors
+  - name: Guillaume Metzler
+  - name: Julien Velcin
+  paper:
+    summary: We investigate the confidence and calibration of quantized models and show that 4-bit quantization with GPTQ decreases confidence in true labels, with varying impacts across different language models and scales.
+    url: https://arxiv.org/abs/2405.00632
+
+- title: "Mini minds: Exploring Bebeshka and Zlata baby models"
+  publishedIn:
+    name: BabyLM @ CoNLL 2023
+    date: Dec 2023
+    url: https://aclanthology.org/2023.conll-babylm.4/
+  authors:
+  - name: "Irina Proskurina"
+  # url: https://example.com  # Allows for links to other authors
+  - name: Guillaume Metzler
+  - name: Julien Velcin
+  paper:
+    summary: We describe the University of Lyon 2 submission to the STRICT-SMALL track of the BabyLM competition. We introduce two small-size language models, a 4-layer encoder with 8 attention heads and a 6-layer decoder model with 12 heads which we term Bebeshka and Zlata. Despite being half the scale of the baseline LMs, our proposed models achieve comparable performance. We further explore the applicability of small-scale language models in tasks involving moral judgments.
+    url: https://arxiv.org/abs/2311.03216
+- title: "The Other Side of Compression: Measuring Bias in Pruned Transformers"
+  publishedIn:
+    name: IDA 2023
+    date: April 2023
+    url: https://link.springer.com/chapter/10.1007/978-3-031-30047-9_29
+  authors:
+  - name: "Irina Proskurina"
+  # url: https://example.com  # Allows for links to other authors
+  - name: Guillaume Metzler
+  - name: Julien Velcin
+  paper:
+    summary: We evaluate bias in compressed models fine-tuned on hate speech data and estimate to which extent the pruned models capture the relevant context when classifying the input text as hateful, offensive or neutral. Results of our experiments show that transformer-based encoders with 70% or fewer preserved weights are prone to gender, racial, and religious identity-based bias, even if the performance loss is insignificant.
+    url: https://arxiv.org/pdf/2311.03216
+- title: "Can BERT eat RuCoLA? Topological Data Analysis to Explain"
+  publishedIn:
+    name: SlavicNLP @ EACL 2023
+    date: May 2023
+    url: https://aclanthology.org/2023.bsnlp-1.15/
+  authors:
+  - name: "Irina Proskurina"
+  - name: Ekaterina Artemova
+  - name: Irina Piontkovskaya
+  paper:
+    summary: "We investigate how Transformer language models fine-tuned for acceptability classification capture linguistic features. We introduce novel topological features, chordality, and the matching number, and show that TDA-based classifiers outperform fine-tuning baselines. We propose several black-box introspection techniques aimed at detecting changes in the attention mode of the LMs during fine-tuning, defining the LM's prediction confidences, and associating individual heads with fine-grained grammar phenomena."
+    url: https://arxiv.org/abs/2304.01680
+- title: "Acceptability Judgements via Examining the Topology of Attention Maps"
+  publishedIn:
+    name: EMNLP 2022
+    date: December 2022
+    url: hhttps://aclanthology.org/2022.findings-emnlp.7/
+  authors:
+  - name: "Daniil Cherniavskii*"
+  - name: "Eduard Tulchinskii*"
+  - name: "Vladislav Mikhailov*"
+  - name: "Irina Proskurina*"
+  - name: Laida Kushnareva
+  - name: Ekaterina Artemova
+  - name: Serguei Barannikov
+  - name: Irina Piontkovskaya
+  - name: Dmitri Piontkovski
+  - name: Evgeny Burnaev
+  paper:
+    summary: "We approach the paradigm of acceptability judgments with topological data analysis, showing that the topological properties of the attention graph can be efficiently exploited for two standard practices in linguistics: binary judgments and linguistic minimal pairs."
+    url: https://arxiv.org/abs/2205.09630

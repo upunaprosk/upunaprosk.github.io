@@ -1,0 +1,12 @@
+# Copyright Notice
+copyright: "© 2024 Copyright. Based on the Dennis Aumiller theme."
+
+
+# Meta description for your site.  This will help the search engines to find your site.
+description: Personal homepage and blog of Irina Proskurina.
+# Specify OpenGraph Headers
+# Adjusted from https://github.com/hugo-toha/hugo-toha.github.io/blob/source/data/en/site.yaml
+openGraph:
+  title: Irina Proskurina
+  type: website
+  description: Personal homepage and blog of Irina Proskurina

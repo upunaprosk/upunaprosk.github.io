@@ -1,0 +1,101 @@
+{{ $sections := site.Data.sections }}
+{{ if (index site.Data site.Language.Lang).sections }}
+  {{ $sections = (index site.Data site.Language.Lang).sections }}
+{{ end }}
+
+{{ $backgroundImage := "/images/default-background.jpg" }}
+{{ if site.Params.background }}
+  {{ $backgroundImage = site.Params.background }}
+{{ end }}
+
+{{ $src := resources.Get $backgroundImage }}
+
+{{/* Set image sizes */}}
+{{ $tinyw := "500x" }}
+{{ $smallw := "800x" }}
+{{ $mediumw := "1200x" }}
+{{ $largew := "1500x" }}
+
+{{/* Resize the background image */}}
+{{ $tiny := $src.Resize $tinyw }}
+{{ $small := $src.Resize $smallw }}
+{{ $medium := $src.Resize $mediumw }}
+{{ $large := $src.Resize $largew }}
+
+{{ if lt $src.Width "500" }}
+  {{ $tiny = $src }}
+  {{ $small = $src }}
+  {{ $medium = $src }}
+  {{ $large = $src }}
+{{ end }}
+
+{{ if lt $src.Width "800" }}
+  {{ $small = $src }}
+  {{ $medium = $src }}
+  {{ $large = $src }}
+{{ end }}
+
+{{ if lt $src.Width "1200" }}
+  {{ $medium = $src }}
+  {{ $large = $src }}
+{{ end }}
+
+{{ if lt $src.Width "1500" }}
+  {{ $large = $src }}
+{{ end }}
+
+<div class="container-fluid home" id="home">
+  <style>
+    /* General page height reduction */
+    .container-fluid.home {
+      height: 20vh; /* Set height to 20% of the viewport height */
+    }
+
+    /* 0 to 499 */
+    #homePageBackgroundImageDivStyled {
+      background-image: url('{{ $tiny.RelPermalink }}');
+      background-size: 100% 10%; /* Reduce background image size */
+      background-position: top;
+      height: 20vh; /* Reduce height to 20% of the viewport */
+    }
+    /* 500 to 800 */
+    @media (min-width: 500px) and (max-width: 800px) {
+      #homePageBackgroundImageDivStyled {
+        background-image: url('{{ $small.RelPermalink }}');
+        background-size: 100% 50%;
+        background-position: top;
+        height: 30vh;
+      }
+    }
+    /* 801 to 1200 */
+    @media (min-width: 801px) and (max-width: 1200px) {
+      #homePageBackgroundImageDivStyled {
+        background-image: url('{{ $medium.RelPermalink }}');
+        background-size: 100% 50%; /* Reduce background image size */
+        background-position: top;
+        height: 30vh; /* Same reduced height */
+      }
+    }
+    /* 1201 to 1500 */
+    @media (min-width: 1201px) and (max-width: 1500px) {
+      #homePageBackgroundImageDivStyled {
+        background-image: url('{{ $large.RelPermalink }}');
+        background-size: 100% 50%; /* Slightly larger background */
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 30vh; /* Keep reduced height */
+      }
+    }
+    /* 1501 and above */
+    @media (min-width: 1501px) {
+      #homePageBackgroundImageDivStyled {
+        background-image: url('{{ $src.RelPermalink }}');
+        background-size: 100% 50%; /* A bit larger for large screens */
+        background-position: top;
+        height: 50vh; /* Maintain reduced height */
+      }
+    }
+  </style>
+  <span class="on-the-fly-behavior"></span>
+  <div id="homePageBackgroundImageDivStyled" class="background container-fluid"></div>
+</div>
