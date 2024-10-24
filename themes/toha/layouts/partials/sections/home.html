@@ -110,7 +110,6 @@
     <img src="{{ $authorImage.RelPermalink }}"
       class="rounded-circle mx-auto d-block img-fluid"
       alt="Author Image"
-         style="width: 250px; height: 250px;"
     />
     <h1 class="greeting"> {{ $author.greeting }} {{ $name }}!</h1>
     {{ if $author.subtitle }}
@@ -131,11 +130,11 @@
       {{ end }}
     </ul>
 
-    <div class="center-container" style="margin: 40px auto; width: 15%;">
+    <div class="center-container" style="margin: 10px auto; width: 18%;">
       <div class="text-container ml-auto" style="margin: auto; width: 100%;">
         <ul class="social-link d-flex">
           {{ range $author.socialLinks }}
-          <li style="display: inline; margin: 0 2px;">
+          <li style="display: inline; margin: 0 5px;">
             {{ if eq .name "Email" }}
               <a href="mailto:{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"><i class="{{ .icon }}"></i></a>
             {{ else if eq .name (i18n "phone") }}
@@ -163,7 +162,7 @@
         {{ if .section.id }}
           {{ $sectionID = .section.id }}
         {{ end }}
-        <a href="#{{ $sectionID }}" aria-label="{{ i18n "read" }} {{ i18n "more" }} - {{ $name }}" style="display: inline-block; margin-top: 200px;"><i class="arrow fa fa-chevron-down"></i></a>
+        <a href="#{{ $sectionID }}" aria-label="{{ i18n "read" }} {{ i18n "more" }} - {{ $name }}" style="display: inline-block;"><i class="arrow fa fa-chevron-down"></i></a>
     {{ end }}
     {{ end }}
   </div>
