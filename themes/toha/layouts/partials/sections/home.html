@@ -130,11 +130,66 @@
       {{ end }}
     </ul>
 
-    <div class="center-container" style="margin: 10px auto; width: 18%;">
-      <div class="text-container ml-auto" style="margin: auto; width: 100%;">
-        <ul class="social-link d-flex">
+    <style>
+      .center-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 10px auto;
+      }
+
+      .text-container {
+        width: 100%;
+        text-align: center;
+      }
+
+      .social-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+      }
+
+      .social-link li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        vertical-align: middle;
+      }
+
+      .social-link a {
+        display: inline-block;
+        padding: 10px 10px;
+        margin: 0;
+        vertical-align: middle;
+      }
+
+      @media (max-width: 600px) {
+        .social-link {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .social-link li {
+          margin: 0;
+          padding: 0;
+        }
+
+        .social-link a {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    </style>
+    <div class="center-container">
+      <div class="text-container">
+        <ul class="social-link">
           {{ range $author.socialLinks }}
-          <li style="display: inline; margin: 0 5px;">
+          <li>
             {{ if eq .name "Email" }}
               <a href="mailto:{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"><i class="{{ .icon }}"></i></a>
             {{ else if eq .name (i18n "phone") }}
@@ -156,14 +211,18 @@
         ><button class="btn btn-dark">{{ .title }}</button></a>
       {{ end }}
     </div>
+    <div class="center-container">
     {{ if $sections }}
       {{ range first 1 (where (sort $sections "section.weight") ".section.enable" true) }}
         {{ $sectionID := replace (lower .section.name) " " "-"  }}
         {{ if .section.id }}
           {{ $sectionID = .section.id }}
         {{ end }}
-        <a href="#{{ $sectionID }}" aria-label="{{ i18n "read" }} {{ i18n "more" }} - {{ $name }}" style="display: inline-block;"><i class="arrow fa fa-chevron-down"></i></a>
+        <a href="#{{ $sectionID }}" aria-label="{{ i18n "read" }} {{ i18n "more" }} - {{ $name }}" style="display: inline-block;">
+          <i class="arrow fa fa-chevron-down"></i> <!-- Ensure Font Awesome is properly included -->
+        </a>
+      {{ end }}
     {{ end }}
-    {{ end }}
+    </div>
   </div>
 </div>
