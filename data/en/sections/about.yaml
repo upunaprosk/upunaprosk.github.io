@@ -9,7 +9,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: PhD student working on language model compression
+designation: ""
 # your company information
 
 
@@ -24,10 +24,11 @@ Prior to my PhD, I obtained my MSc from the Higher School of Economics Universit
 During my master studies, I worked as a research intern at the Learner Corpora Lab (HSE), where I collaborated with a team of corpus and computational linguists on grammatical error detection in learner-written essays and worked with the JetBrains team to enhance the Grazie tool.
 I also worked at the Laboratory for Models and Methods of Computational Pragmatics at HSE on the application of topological data analysis to grammatical acceptability judgments.\n\n
 \n\n
-Explore my research and the artifacts I regularly share on [**Hugging Hub**](https://huggingface.co/iproskurina).
-\n\n
-If you're a PhD student based in Lyon and working in NLP, I’m organizing a joint event for students. 
-Sign up by completing the survey [here](https://forms.gle/e4afyV3t2ysGNxuT9).
+Below, I provide a list of my publications.
+Also, feel free to explore the artifacts I share on [**Hugging Face Hub**](https://huggingface.co/iproskurina).
+
+Additionally, I am organizing a joint event for PhD students in Lyon who are working in NLP. 
+If you’re interested, you can sign up by [completing the survey here](https://forms.gle/e4afyV3t2ysGNxuT9).
 "
 
 # TODO: These were moved to the main author page. Currently not displayed at all on this particular element.

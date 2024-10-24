@@ -1,97 +1,170 @@
-{{ $sections := site.Data.sections }}
+{{ $author:= site.Data.author }}
+{{ if (index site.Data site.Language.Lang).author }}
+  {{ $author = (index site.Data site.Language.Lang).author }}
+{{ end }}
+
+{{ $name:="Hi, I'm Irina" }}
+{{ if $author.nickname }}
+  {{ $name = $author.nickname }}
+{{ else if $author.name }}
+  {{ $name = $author.name }}
+{{ end }}
+
+{{ $sections:= site.Data.sections }}
 {{ if (index site.Data site.Language.Lang).sections }}
   {{ $sections = (index site.Data site.Language.Lang).sections }}
 {{ end }}
 
-{{ $backgroundImage := "/images/default-background.jpg" }}
+{{ $backgroundImage:= "/images/default-background.jpg" }}
 {{ if site.Params.background }}
   {{ $backgroundImage = site.Params.background }}
 {{ end }}
 
+
+{{ $authorImage:= "/images/default-avatar.png" }}
+{{ if $author.image }}
+  {{ $authorImage = $author.image }}
+{{ end }}
+{{ $authorImage := resources.Get $authorImage }}
+
+{{/* apply image processing. don't use "Fit" in svg or gif because its not supported */}}
+{{ if and $authorImage (and (ne $authorImage.MediaType.SubType "svg") ( ne $authorImage.MediaType.SubType "gif")) }}
+  {{ $authorImage = $authorImage.Fit "148x148" }}
+{{ end }}
+{{/* get file that matches the filename as specified as src="" in shortcode */}}
 {{ $src := resources.Get $backgroundImage }}
 
-{{/* Set image sizes */}}
-{{ $tinyw := "500x" }}
-{{ $smallw := "800x" }}
-{{ $mediumw := "1200x" }}
-{{ $largew := "1500x" }}
+{{/* set image sizes, these are hardcoded for now, x dictates that images are resized to this width */}}
 
-{{/* Resize the background image */}}
+{{ $tinyw := default "500x" }}
+{{ $smallw := default "800x" }}
+{{ $mediumw := default "1200x" }}
+{{ $largew := default "1500x" }}
+
+{{/* resize the src image to the given sizes */}}
+
 {{ $tiny := $src.Resize $tinyw }}
 {{ $small := $src.Resize $smallw }}
 {{ $medium := $src.Resize $mediumw }}
 {{ $large := $src.Resize $largew }}
 
+{{/* only use images smaller than or equal to the src (original) image size, as Hugo will upscale small images */}}
+{{/* set the sizes attribute to (min-width: 35em) 1200px, 100vw unless overridden in shortcode */}}
+
 {{ if lt $src.Width "500" }}
-  {{ $tiny = $src }}
-  {{ $small = $src }}
-  {{ $medium = $src }}
-  {{ $large = $src }}
+  {{ $tiny := $src}}
+  {{ $small := $src}}
+  {{ $medium := $src}}
+  {{ $large := $src}}
 {{ end }}
 
 {{ if lt $src.Width "800" }}
-  {{ $small = $src }}
-  {{ $medium = $src }}
-  {{ $large = $src }}
+  {{ $small := $src}}
+  {{ $medium := $src}}
+  {{ $large := $src}}
 {{ end }}
 
 {{ if lt $src.Width "1200" }}
-  {{ $medium = $src }}
-  {{ $large = $src }}
+  {{ $medium := $src}}
+  {{ $large := $src}}
 {{ end }}
 
 {{ if lt $src.Width "1500" }}
-  {{ $large = $src }}
+  {{ $large := $src}}
 {{ end }}
 
 <div class="container-fluid home" id="home">
   <style>
-    /* General page height reduction */
-    .container-fluid.home {
-      height: 20vh; /* Set height to 20% of the viewport height */
-    }
-
-    /* 0 to 499 */
+    /* 0 to 299 */
     #homePageBackgroundImageDivStyled {
       background-image: url('{{ $tiny.RelPermalink }}');
-      background-position: top;
-      background-repeat: no-repeat;
-      height: 20vh; /* Reduce height to 20% of the viewport */
     }
-    /* 500 to 800 */
-    @media (min-width: 500px) and (max-width: 800px) {
-      #homePageBackgroundImageDivStyled {
-        background-image: url('{{ $small.RelPermalink }}');
-        background-position: top;
-        height: 30vh;
-      }
+    /* 300 to X */
+    @media (min-width: 500px) and (max-width: 800px) { /* or 301 if you want really the same as previously.  */
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('{{ $small.RelPermalink }}');
+        }
     }
-    /* 801 to 1200 */
-    @media (min-width: 801px) and (max-width: 1200px) {
-      #homePageBackgroundImageDivStyled {
-        background-image: url('{{ $medium.RelPermalink }}');
-        background-position: top;
-        height: 40vh; /* Same reduced height */
-      }
+    @media (min-width: 801px) and (max-width: 1200px) { /* or 301 if you want really the same as previously.  */
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('{{ $medium.RelPermalink }}');
+        }
     }
-    /* 1201 to 1500 */
-    @media (min-width: 1201px) and (max-width: 1500px) {
-      #homePageBackgroundImageDivStyled {
-        background-image: url('{{ $large.RelPermalink }}');
-        background-position: top;
-        background-repeat: no-repeat;
-        height: 30vh; /* Keep reduced height */
-      }
+    @media (min-width: 1201px) and (max-width: 1500px) { /* or 301 if you want really the same as previously.  */
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('{{ $large.RelPermalink }}');
+        }
     }
-    /* 1501 and above */
-    @media (min-width: 1501px) {
-      #homePageBackgroundImageDivStyled {
-        background-image: url('{{ $src.RelPermalink }}');
-        background-position: top;
-        height: 30vh; /* Maintain reduced height */
-      }
+    @media (min-width: 1501px) { /* or 301 if you want really the same as previously.  */
+      #homePageBackgroundImageDivStyled {   
+          background-image: url('{{ $src.RelPermalink }}');
+        }
     }
-  </style>
-  <span class="on-the-fly-behavior"></span>
-  <div id="homePageBackgroundImageDivStyled" class="background container-fluid"></div>
+    </style>
+    <span class="on-the-fly-behavior"></span>
+  <div
+    id="homePageBackgroundImageDivStyled"
+    class="background container-fluid"
+  ></div>
+  <div class="container content text-center">
+    <img src="{{ $authorImage.RelPermalink }}"
+      class="rounded-circle mx-auto d-block img-fluid"
+      alt="Author Image"
+         style="width: 250px; height: 250px;"
+    />
+    <h1 class="greeting"> {{ $author.greeting }} {{ $name }}!</h1>
+    {{ if $author.subtitle }}
+      <h2 class="greeting-subtitle">{{ $author.subtitle }}</h2>
+    {{ end }}
+    <div class="typing-carousel">
+    I am a researcher interested in
+    </div>
+    <div class="typing-carousel">
+      <span id="ityped" class="ityped"></span>
+      <span class="ityped-cursor"></span>
+    </div>
+    <ul id="typing-carousel-data">
+      {{ if $author.summary }}
+        {{ range $author.summary }}
+          <li>{{ . }}</li>
+        {{ end}}
+      {{ end }}
+    </ul>
+
+    <div class="center-container" style="margin: 40px auto; width: 15%;">
+      <div class="text-container ml-auto" style="margin: auto; width: 100%;">
+        <ul class="social-link d-flex">
+          {{ range $author.socialLinks }}
+          <li style="display: inline; margin: 0 2px;">
+            {{ if eq .name "Email" }}
+              <a href="mailto:{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"><i class="{{ .icon }}"></i></a>
+            {{ else if eq .name (i18n "phone") }}
+              <a href="tel:{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"><i class="{{ .icon }}"></i></a>
+            {{ else }}
+              <a href="{{ .url }}" title="{{ .name }}" target="_blank" rel="noopener"><i class="{{ .icon }}"></i></a>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ if $author.resume }}
+        <a href="{{ $author.resume | relURL }}" title='{{ i18n "resume"}}' target="#" style="margin-left: -5.5%;">
+          <button class="btn btn-dark">{{ i18n "resume"}}</button>
+        </a>
+      {{ end }}
+      {{ range $author.resourceLinks }}
+      <a href="{{ .url | relURL }}" title="{{ .title }}" target="#"
+        ><button class="btn btn-dark">{{ .title }}</button></a>
+      {{ end }}
+    </div>
+    {{ if $sections }}
+      {{ range first 1 (where (sort $sections "section.weight") ".section.enable" true) }}
+        {{ $sectionID := replace (lower .section.name) " " "-"  }}
+        {{ if .section.id }}
+          {{ $sectionID = .section.id }}
+        {{ end }}
+        <a href="#{{ $sectionID }}" aria-label="{{ i18n "read" }} {{ i18n "more" }} - {{ $name }}" style="display: inline-block; margin-top: 200px;"><i class="arrow fa fa-chevron-down"></i></a>
+    {{ end }}
+    {{ end }}
+  </div>
 </div>

@@ -1,6 +1,7 @@
 languageCode: en-us
 
-baseURL: "https://github.com/upunaprosk/upunaprosk.github.io/"
+baseURL: "https://www.iproskurina.com/"
+title: "Irina Proskurina"
 theme: "toha"
 
 # Manage languages

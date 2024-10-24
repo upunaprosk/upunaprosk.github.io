@@ -13,10 +13,10 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - Language Model Compression
-  - Culturally Aware Natural Language Inference
-  - Quantization
-  - Natural Language Processing
+  - Compression Techniques for Large Language Models
+  - Uncertainty Quantification in Deep Learning
+  - Bias Mitigation in Language Models
+  - Language Model Evaluation
 
 socialLinks:
 - name: Email
@@ -28,7 +28,9 @@ socialLinks:
 - name: Linkedin
   icon: "fab fa-linkedin"
   url: "https://www.linkedin.com/in/irinaproskurina/"
-
+- name: Twitter
+  icon: "fab fa-twitter"
+  url: "https://www.twitter.com/irproskurina"
 # your resume. this file path should be relative to you "static" directory
 # TODO: Rename to CV on website
-resume: "files/IP-CV.pdf"
+#resume: "files/IP-CV.pdf"

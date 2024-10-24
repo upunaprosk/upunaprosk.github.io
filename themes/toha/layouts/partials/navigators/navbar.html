@@ -53,7 +53,7 @@
       {{ if $invertedLogo }}
         <img src="{{ $invertedLogo }}" id="logo" alt="Logo">
       {{ end }}
-      {{- site.Title -}}
+      <span style="font-size: 2rem; display: block; text-align: left;">{{- .Site.Title -}}</span>
     </a>
     <button
       class="navbar-toggler navbar-dark"
@@ -137,11 +137,4 @@
   {{ if $invertedLogo }}
     <img src="{{ $invertedLogo }}" class="d-none" id="inverted-logo" alt="Inverted Logo">
   {{ end }}
-
 </nav>
-<style>
-  /* Custom CSS to increase top margin for nav links */
-  .navbar-nav .nav-item {
-    margin-top: 40px; /* Adjust this value as needed */
-  }
-</style>
