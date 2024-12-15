@@ -1,0 +1,113 @@
+---
+
+@inproceedings{cherniavskii-etal-2022-acceptability,
+    title = "Acceptability Judgements via Examining the Topology of Attention Maps",
+    author = "Cherniavskii*, Daniil  and
+      Tulchinskii*, Eduard  and
+      Mikhailov*, Vladislav  and
+      Proskurina*, Irina  and
+      Kushnareva, Laida  and
+      Artemova, Ekaterina  and
+      Barannikov, Serguei  and
+      Piontkovskaya, Irina  and
+      Piontkovski, Dmitri  and
+      Burnaev, Evgeny",
+    editor = "Goldberg, Yoav  and
+      Kozareva, Zornitsa  and
+      Zhang, Yue",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2022",
+    month = dec,
+    year = "2022",
+    address = "Abu Dhabi, United Arab Emirates",
+    publisher = "Association for Computational Linguistics",
+    pdf = "https://aclanthology.org/2022.findings-emnlp.7.pdf",
+    doi = "10.18653/v1/2022.findings-emnlp.7",
+    pages = "88--107",
+    abstract = "The role of the attention mechanism in encoding linguistic knowledge has received special interest in NLP. However, the ability of the attention heads to judge the grammatical acceptability of a sentence has been underexplored. This paper approaches the paradigm of acceptability judgments with topological data analysis (TDA), showing that the geometric properties of the attention graph can be efficiently exploited for two standard practices in linguistics: binary judgments and linguistic minimal pairs. Topological features enhance the BERT-based acceptability classifier scores by 8{\%}-24{\%} on CoLA in three languages (English, Italian, and Swedish). By revealing the topological discrepancy between attention maps of minimal pairs, we achieve the human-level performance on the BLiMP benchmark, outperforming nine statistical and Transformer LM baselines. At the same time, TDA provides the foundation for analyzing the linguistic functions of attention heads and interpreting the correspondence between the graph features and grammatical phenomena. We publicly release the code and other materials used in the experiments.",
+}
+
+@inproceedings{10.1007/978-3-031-30047-9_29,
+author="Proskurina, Irina
+and Metzler, Guillaume
+and Velcin, Julien",
+editor="Cr{\'e}milleux, Bruno
+and Hess, Sibylle
+and Nijssen, Siegfried",
+title="The Other Side of Compression: Measuring Bias in Pruned Transformers",
+booktitle="Advances in Intelligent Data Analysis XXI",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="366--378",
+abstract="Social media platforms have become popular worldwide. Online discussion forums attract users because of their easy access, speech freedom, and ease of communication. Yet there are also possible negative aspects of such communication, including hostile and hate language. While fast and effective solutions for detecting inappropriate language online are constantly being developed, there is little research focusing on the bias of compressed language models that are commonly used nowadays. In this work, we evaluate bias in compressed models trained on Gab and Twitter speech data and estimate to which extent these pruned models capture the relevant context when classifying the input text as hateful, offensive or neutral. Results of our experiments show that transformer-based encoders with 70{\%} or fewer preserved weights are prone to gender, racial, and religious identity-based bias, even if the performance loss is insignificant. We suggest a supervised attention mechanism to counter bias amplification using ground truth per-token hate speech annotation. The proposed method allows pruning BERT, RoBERTa and their distilled versions up to 50{\%} while preserving 90{\%} of their initial performance according to bias and plausibility scores.",
+isbn="978-3-031-30047-9"
+}
+
+@inproceedings{proskurina-etal-2024-quantization,
+    title = "When Quantization Affects Confidence of Large Language Models?",
+    author = "Proskurina, Irina  and
+      Brun, Luc  and
+      Metzler, Guillaume  and
+      Velcin, Julien",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Findings of the Association for Computational Linguistics: NAACL 2024",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    pdf = "https://aclanthology.org/2024.findings-naacl.124.pdf",
+    doi = "10.18653/v1/2024.findings-naacl.124",
+    pages = "1918--1928",
+    abstract = "Recent studies introduced effective compression techniques for Large Language Models (LLMs) via post-training quantization or low-bit weight representation. Although quantized weights offer storage efficiency and allow for faster inference, existing works have indicated that quantization might compromise performance and exacerbate biases in LLMs.This study investigates the confidence and calibration of quantized models, considering factors such as language model type and scale as contributors to quantization loss.Firstly, we reveal that quantization with GPTQ to 4-bit results in a decrease in confidence regarding true labels, with varying impacts observed among different language models. Secondly, we observe fluctuations in the impact on confidence across different scales. Finally, we propose an explanation for quantization loss based on confidence levels, indicating that quantization disproportionately affects samples where the full model exhibited low confidence levels in the first place.We make our code and quantized models publicly available.",
+}
+@inproceedings{proskurina-etal-2023-mini,
+    title = "Mini Minds: Exploring Bebeshka and Zlata Baby Models",
+    author = "Proskurina, Irina  and
+      Metzler, Guillaume  and
+      Velcin, Julien",
+    editor = "Warstadt, Alex  and
+      Mueller, Aaron  and
+      Choshen, Leshem  and
+      Wilcox, Ethan  and
+      Zhuang, Chengxu  and
+      Ciro, Juan  and
+      Mosquera, Rafael  and
+      Paranjabe, Bhargavi  and
+      Williams, Adina  and
+      Linzen, Tal  and
+      Cotterell, Ryan",
+    booktitle = "Proceedings of the BabyLM Challenge at the 27th Conference on Computational Natural Language Learning",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    pdf = "https://aclanthology.org/2023.conll-babylm.4.pdf",
+    doi = "10.18653/v1/2023.conll-babylm.4",
+    pages = "58--68",
+}
+@inproceedings{proskurina-etal-2023-bert,
+    title = "Can {BERT} eat {R}u{C}o{LA}? Topological Data Analysis to Explain",
+    author = "Proskurina, Irina  and
+      Artemova, Ekaterina  and
+      Piontkovskaya, Irina",
+    editor = "Piskorski, Jakub  and
+      Marci{\'n}czuk, Micha{\l}  and
+      Nakov, Preslav  and
+      Ogrodniczuk, Maciej  and
+      Pollak, Senja  and
+      P{\v{r}}ib{\'a}{\v{n}}, Pavel  and
+      Rybak, Piotr  and
+      Steinberger, Josef  and
+      Yangarber, Roman",
+    booktitle = "Proceedings of the 9th Workshop on Slavic Natural Language Processing 2023 (SlavicNLP 2023)",
+    month = may,
+    year = "2023",
+    address = "Dubrovnik, Croatia",
+    publisher = "Association for Computational Linguistics",
+    pdf = "https://aclanthology.org/2023.bsnlp-1.15.pdf",
+    doi = "10.18653/v1/2023.bsnlp-1.15",
+    pages = "123--137",
+    abstract = "This paper investigates how Transformer language models (LMs) fine-tuned for acceptability classification capture linguistic features. Our approach is based on best practices of topological data analysis (TDA) in NLP: we construct directed attention graphs from attention matrices, derive topological features from them and feed them to linear classifiers. We introduce two novel features, chordality and the matching number, and show that TDA-based classifiers outperform fine-tuning baselines. We experiment with two datasets, CoLA and RuCoLA, in English and Russian, which are typologically different languages. On top of that, we propose several black-box introspection techniques aimed at detecting changes in the attention mode of the LM{'}s during fine-tuning, defining the LM{'}s prediction confidences, and associating individual heads with fine-grained grammar phenomena. Our results contribute to understanding the behaviour of monolingual LMs in the acceptability classification task, provide insights into the functional roles of attention heads, and highlight the advantages of TDA-based approaches for analyzing LMs.We release the code and the experimental results for further uptake.",
+}
