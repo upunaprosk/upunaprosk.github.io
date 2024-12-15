@@ -55,10 +55,12 @@ layout: default
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
-
-
     {% if site.newsletter.enabled and site.footer_fixed %}
       {% include scripts/newsletter.liquid center=true %}
     {% endif %}
   </article>
+<section id="app-container"></section>
+<script src="dist/main.js"></script>
+<script data-goatcounter="https://iproskurina.goatcounter.com/count"
+    async src="//gc.zgo.at/count.js"></script>
 </div>
