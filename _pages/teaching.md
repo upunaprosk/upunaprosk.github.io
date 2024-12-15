@@ -20,22 +20,21 @@ nav_order: 6
 
 **Master’s Research Projects**
 
-- **Research Initiation (course)**: *Toxic vs Hate Speech in NLP: An Analysis of Translations*  
+- **Research Initiation (course)**: *Toxic vs Hate Speech in NLP*  
   (2023, Master Informatique 1, University of Lyon 2)  
 
 - **Angelo Lamure-Fontanini** (2024, University of Lyon 2)  
-  Weekly supervision. Research focused on benchmarking hate speech models.  
+  Research on biased outcomes of LoRA and QLoRA.   
   *(Apr 2024 – Jul 2024)*  
 
 - **Luc Brun** (2023, University of Lyon 2)  
-  Research on the evaluation of quantized large language models. Paper accepted at NAACL 2024.  
+  Research on the evaluation of quantized large language models.  
   *(Sep 2023 – Jan 2024)*  
 
 **Undergraduate Research Projects**
 
-- **Research Initiation (course)**: *Through Stereotypes: An Analysis of Machine Translations*  
+- **Research Initiation (course)**: *Stereotypes and Bias in Machine Translation from English to French*  
   (2023, Master Informatique 1, University of Lyon 2)  
 
-- **Detecting Grammatical L1-Influenced Errors in English Essays**  
-  Supervised research by Daria Kharlamova on L1-Influenced Errors in English Essays. (2022, BSc in Fundamental and Computational Linguistics, HSE).  
-  Won Best Poster Award in HSE's Applied Linguistics Program.
+- **Daria Kharlamova** (2022, Higher School of Economics) 
+  Research work on detection of grammatical L1-influenced errors in english essays.
