@@ -15,11 +15,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a PhD student at the ERIC Lab (University of Lyon and Lyon 2), supervised by [Prof. Julien Velcin](https://velcin.github.io) and [Prof. Guillaume Metzler](https://guillaumemetzler.github.io). My research focuses on estimating and predicting the behavior of compressed language models, with particular attention to biased outcomes resulting from compression.
-I am also developing new French benchmarks aimed at mitigating these biases. 
+I am a PhD student in the ERIC Lab, part of the University of Lyon and Lyon 2, under the supervision of [Prof. Julien Velcin](https://velcin.github.io) and [Prof. Guillaume Metzler](https://guillaumemetzler.github.io). My research focuses on understanding and predicting how compression affects language models, especially regarding biased outcomes. I am also working on new French benchmarks to address these biases.
 
-My PhD is supported by the French National Research Agency (ANR) and is part of [the DIKE (DICE) project]( https://www.anr-dike.fr).
+My PhD is funded by the French National Research Agency ANR and is part of the [DIKE (DICE) project](https://www.anr-dike.fr).
 
-Before pursuing my PhD, I obtained an MSc in Computer Science through a double degree program at the Higher School of Economics (HSE) and the University of Clermont-Ferrand. 
-During my master’s studies, I worked as a research intern at the Learner Corpora Lab (HSE), where I collaborated with a team of corpus and computational linguists on grammatical error detection in learner-written essays and contributed to enhancing the Grazie tool in partnership with the JetBrains team. 
-Additionally, I worked as a research intern at the Laboratory for Models and Methods of Computational Pragmatics (HSE), applying topological data analysis to grammatical acceptability judgments.
+Before starting my PhD, I earned an MSc in Computer Science through a double degree program between the Higher School of Economics (HSE University) and the University of Clermont-Ferrand. During this time, I interned at the Learner Corpora Lab, part of HSE University, where I collaborated with corpus and computational linguists on grammatical error detection in learner essays and contributed to improving the Grazie tool in partnership with JetBrains. Later, I worked at the Laboratory for Models and Methods of Computational Pragmatics, also part of HSE University, where I explored topological data analysis for acceptability judgments.
