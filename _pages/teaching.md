@@ -7,12 +7,16 @@ nav: true
 nav_order: 6
 ---
 
-#### Academic year 2024–2025
+#### 2024–2025
 - **Natural Language Processing 1** (Master - MIASHS, University of Lyon 2) [[materials]](https://github.com/upunaprosk/ul2-nlp-course)
-
-#### Academic year 2023–2024
-- **Data Science Workshop** (Master - MIASHS, University of Lyon 2) [[materials]](https://github.com/upunaprosk/ul2-atelier-data-science)
+- **Research initiation course**: *Toxic and Hate Speech in NLP*  
+  (Master Informatique 1, University of Lyon 2)
+- 
+#### 2023–2024
+- **Practical Deepl Learning (Part of Atelier Data Science)** (Master - MIASHS, University of Lyon 2) [[materials]](https://github.com/upunaprosk/ul2-atelier-data-science)
 - **Natural Language Processing 1** (Master - MIASHS, University of Lyon 2)
+- **Research initiation course**: *Stereotypes Evaluation in Machine Translation from English to French*  
+  (Master Informatique 1, University of Lyon 2)  
 
 ---
 
@@ -20,21 +24,15 @@ nav_order: 6
 
 **Master’s Research Projects**
 
-- **Research Initiation (course)**: *Toxic vs Hate Speech in NLP*  
-  (2023, Master Informatique 1, University of Lyon 2)  
-
-- **Angelo Lamure-Fontanini** (2024, University of Lyon 2)  
+- **Angelo Lamure-Fontanini**  
   Research on biased outcomes of LoRA and QLoRA.   
   *(Apr 2024 – Jul 2024)*  
 
-- **Luc Brun** (2023, University of Lyon 2)  
+- **Luc Brun**  
   Research on the evaluation of quantized large language models.  
   *(Sep 2023 – Jan 2024)*  
 
 **Undergraduate Research Projects**
 
-- **Research Initiation (course)**: *Stereotypes and Bias in Machine Translation from English to French*  
-  (2023, Master Informatique 1, University of Lyon 2)  
-
-- **Daria Kharlamova** (2022, Higher School of Economics) 
-  Research work on detection of grammatical L1-influenced errors in english essays.
+- **Daria Kharlamova** (2022, Higher School of Economics)
+  Research on detecting L1-influenced grammatical errors in English learner essays.
