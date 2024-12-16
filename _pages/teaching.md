@@ -8,11 +8,13 @@ nav_order: 6
 ---
 
 #### 2024–2025
+
 - **Natural Language Processing 1** (Master - MIASHS, University of Lyon 2) [[materials]](https://github.com/upunaprosk/ul2-nlp-course)
 - **Research initiation course**: *Toxic and Hate Speech in NLP*  
   (Master Informatique 1, University of Lyon 2)
-- 
+
 #### 2023–2024
+
 - **Practical Deepl Learning (Part of Atelier Data Science)** (Master - MIASHS, University of Lyon 2) [[materials]](https://github.com/upunaprosk/ul2-atelier-data-science)
 - **Natural Language Processing 1** (Master - MIASHS, University of Lyon 2)
 - **Research initiation course**: *Stereotypes Evaluation in Machine Translation from English to French*  
