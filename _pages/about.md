@@ -6,7 +6,7 @@ subtitle: "Deep Learning & NLP Researcher, PhD @ University of Lyon and Lyon 2, 
 
 profile:
   align: right
-  image: assets/images/default-avatar.png
+  image: "./default-avatar.png"
   image_circular: false # crops the image to make it circular
   more_info: false
 
