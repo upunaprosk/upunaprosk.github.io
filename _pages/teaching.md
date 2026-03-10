@@ -15,7 +15,7 @@ nav_order: 6
 
 #### 2023–2024
 
-- **Practical Deepl Learning (Part of Atelier Data Science)** (Master - MIASHS, University of Lyon 2) [[materials]](https://github.com/upunaprosk/ul2-atelier-data-science)
+- **Practical Deep Learning (Part of Atelier Data Science)** (Master - MIASHS, University of Lyon 2) [[materials]](https://github.com/upunaprosk/ul2-atelier-data-science)
 - **Natural Language Processing 1** (Master - MIASHS, University of Lyon 2)
 - **Research initiation course**: *Stereotypes Evaluation in Machine Translation from English to French*  
   (Master Informatique 1, University of Lyon 2)  
@@ -25,6 +25,14 @@ nav_order: 6
 #### Research Supervision
 
 **Master’s Research Projects**
+
+- **Marc-Antoine Charpentier**  
+  Research on implicit hate speech detection.   
+  *(Apr 2025 – Jul 2025)*  
+
+- **Afdal Bouriama**  
+  Research on text detoxification.   
+  *(Apr 2025 – Sep 2025)*  
 
 - **Angelo Lamure-Fontanini**  
   Research on biased outcomes of LoRA and QLoRA.   
@@ -36,5 +44,5 @@ nav_order: 6
 
 **Undergraduate Research Projects**
 
-- **Daria Kharlamova** (2022, Higher School of Economics)
+- **Darya Kharlamova** (2022, Higher School of Economics)
   Research on detecting L1-influenced grammatical errors in English learner essays.
