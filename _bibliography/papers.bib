@@ -1,21 +1,91 @@
 ---
 
-@article{proskurina2025hateprototypes,
-  title={HatePrototypes: Interpretable and Transferable Representations for Implicit and Explicit Hate Speech Detection},
-  author={Proskurina, Irina and Carpentier, Marc-Antoine and Velcin, Julien},
-  journal={arXiv preprint arXiv:2511.06391},
-  year={2025}
+@inproceedings{proskurina-etal-2026-debias,
+    title = "Debias-{S}parse{GPT}: Bias-Aware Pruning for Large Language Models",
+    author = "Proskurina, Irina  and
+      Metzler, Guillaume  and
+      Gourru, Antoine  and
+      Velcin, Julien",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Proceedings of the 2026 Conference on Empirical Methods in Natural Language Processing",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.emnlp-main.1300/",
+    pages = "29600--29623",
+    ISBN = "979-8-89176-459-0",
+    bibtex_show={true},
+    abstract = "Model compression techniques such as pruning and quantization facilitate the efficient deployment and acceleration of Large Language Models (LLMs). However, recent studies show that weight sparsification methods, such as SparseGPT, can amplify existing biases in models, with outputs varying significantly depending on persona cues in the prompt. In this paper, we introduce Debias-SparseGPT, a post-training pruning method incorporating representational debiasing using a second-order term defined over demographically contrasting inputs. We perform empirical validation of our method over a wide range of generative LLMs. Across models and sparsity regimes (25{\%}, 50{\%}, and structured 2:4 sparsity), Debias-SparseGPT consistently reduces pruning-induced bias compared to SparseGPT while preserving model perplexity and zero-shot accuracy. Under the most restrictive 2:4 structured sparsity pattern, which most aggressively degrades model quality, augmenting the calibration set with long-context, content-rich examples further improves both downstream performance and fairness. Overall, Debias-SparseGPT advances the bias-performance trade-off while preserving the computational efficiency of sparse models."
 }
 
-@misc{proskurina2026fairgptqbiasawarequantizationlarge,
+@phdthesis{proskurina2026towards,
+  title={Towards an Unbiased Compression of Large Language Models},
+  author={Proskurina, Irina},
+  year={2026},
+  bibtex_show={true},
+  school={Universit{\'e} Lumi{\`e}re-Lyon II}
+}
+
+
+@inproceedings{kharlamova-proskurina-2026-rilec,
+    title = "{RILEC}: Detection and Generation of {L}1 {R}ussian Interference Errors in {E}nglish Learner Texts",
+    author = "Kharlamova, Darya  and
+      Proskurina, Irina",
+    editor = "Piperidis, Stelios  and
+      Bel, N{\'u}ria  and
+      van den Heuvel, Henk  and
+      Ide, Nancy  and
+      Krek, Simon  and
+      Toral, Antonio",
+    booktitle = "Proceedings of the Fifteenth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2026",
+    address = "Palma de Mallorca, Spain",
+    publisher = "ELRA Language Resource Association",
+    url = "https://aclanthology.org/2026.lrec-1.848/",
+    doi = "10.63317/5bas35hntskv",
+    pages = "10826--10837",
+    bibtex_show={true},
+    abstract = "Many errors in student essays can be explained by influence from the native language (L1). L1 interference refers to errors influenced by a speaker{'}s first language, such as using stadion instead of stadium, reflecting lexical transliteration from Russian. In this work, we address the task of detecting such errors in English essays written by Russian-speaking learners. We introduce RILEC, a large-scale dataset of over 18,000 sentences, combining expert-annotated data from REALEC with synthetic examples generated through rule-based and neural augmentation. We propose a framework for generating L1-motivated errors using generative language models optimized with PPO, prompt-based control, and rule-based patterns. Models fine-tuned on RILEC achieve strong performance, particularly on word-level interference types such as transliteration and tense semantics. We find that the proposed augmentation pipeline leads to a significant performance improvement, making it a potentially valuable tool for learners and teachers to more effectively identify and address such errors."
+}
+
+@inproceedings{kharlamova-proskurina-2026-rilec,
+    title = "{RILEC}: Detection and Generation of {L}1 {R}ussian Interference Errors in {E}nglish Learner Texts",
+    author = "Kharlamova, Darya  and
+      Proskurina, Irina",
+    editor = "Piperidis, Stelios  and
+      Bel, N{\'u}ria  and
+      van den Heuvel, Henk  and
+      Ide, Nancy  and
+      Krek, Simon  and
+      Toral, Antonio",
+    booktitle = "Proceedings of the Fifteenth Language Resources and Evaluation Conference",
+    month = may,
+    year = "2026",
+    address = "Palma de Mallorca, Spain",
+    publisher = "ELRA Language Resource Association",
+    url = "https://aclanthology.org/2026.lrec-1.848/",
+    doi = "10.63317/5bas35hntskv",
+    pages = "10826--10837",
+    bibtex_show={true},
+    abstract = "Many errors in student essays can be explained by influence from the native language (L1). L1 interference refers to errors influenced by a speaker{'}s first language, such as using stadion instead of stadium, reflecting lexical transliteration from Russian. In this work, we address the task of detecting such errors in English essays written by Russian-speaking learners. We introduce RILEC, a large-scale dataset of over 18,000 sentences, combining expert-annotated data from REALEC with synthetic examples generated through rule-based and neural augmentation. We propose a framework for generating L1-motivated errors using generative language models optimized with PPO, prompt-based control, and rule-based patterns. Models fine-tuned on RILEC achieve strong performance, particularly on word-level interference types such as transliteration and tense semantics. We find that the proposed augmentation pipeline leads to a significant performance improvement, making it a potentially valuable tool for learners and teachers to more effectively identify and address such errors."
+}
+
+@article{proskurina2026fairgptqbiasawarequantizationlarge,
       title={Fair-GPTQ: Bias-Aware Quantization for Large Language Models},
       author={Irina Proskurina and Guillaume Metzler and Julien Velcin},
       year={2026},
       eprint={2509.15206},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
+      bibtex_show={true},
       url={https://arxiv.org/abs/2509.15206},
 }
+
 @inproceedings{leteno-etal-2025-histoiresmorales,
     title = "{HISTOIRESMORALES}: A {F}rench Dataset for Assessing Moral Alignment",
     author = "Leteno, Thibaud  and
@@ -37,6 +107,7 @@
     doi = "10.18653/v1/2025.naacl-long.131",
     pages = "2590--2612",
     ISBN = "979-8-89176-189-6",
+    bibtex_show={true},
     abstract = "Aligning language models with human values is crucial, especially as they become more integrated into everyday life. While models are often adapted to user preferences, it is equally important to ensure they align with moral norms and behaviours in real-world social situations. Despite significant progress in languages like English and Chinese, French has seen little attention in this area, leaving a gap in understanding how LLMs handle moral reasoning in this language. To address this gap, we introduce HistoiresMorales, a French dataset derived from MoralStories, created through translation and subsequently refined with the assistance of native speakers to guarantee grammatical accuracy and adaptation to the French cultural context. We also rely on annotations of the moral values within the dataset to ensure their alignment with French norms. HistoiresMorales covers a wide range of social situations, including differences in tipping practices, expressions of honesty in relationships, and responsibilities toward animals. To foster future research, we also conduct preliminary experiments on the alignment of multilingual models on French and English data and the robustness of the alignment. We find that while LLMs are generally aligned with human moral norms by default, they can be easily influenced with user-preference optimization for both moral and immoral data."
 }
 @inproceedings{cherniavskii-etal-2022-acceptability,
@@ -62,6 +133,7 @@
     pdf = "https://aclanthology.org/2022.findings-emnlp.7.pdf",
     doi = "10.18653/v1/2022.findings-emnlp.7",
     pages = "88--107",
+    bibtex_show={true},
     abstract = "The role of the attention mechanism in encoding linguistic knowledge has received special interest in NLP. However, the ability of the attention heads to judge the grammatical acceptability of a sentence has been underexplored. This paper approaches the paradigm of acceptability judgments with topological data analysis (TDA), showing that the geometric properties of the attention graph can be efficiently exploited for two standard practices in linguistics: binary judgments and linguistic minimal pairs. Topological features enhance the BERT-based acceptability classifier scores by 8{\%}-24{\%} on CoLA in three languages (English, Italian, and Swedish). By revealing the topological discrepancy between attention maps of minimal pairs, we achieve the human-level performance on the BLiMP benchmark, outperforming nine statistical and Transformer LM baselines. At the same time, TDA provides the foundation for analyzing the linguistic functions of attention heads and interpreting the correspondence between the graph features and grammatical phenomena. We publicly release the code and other materials used in the experiments.",
 }
 
@@ -78,6 +150,7 @@ year="2023",
 publisher="Springer Nature Switzerland",
 address="Cham",
 pages="366--378",
+bibtex_show={true},
 abstract="Social media platforms have become popular worldwide. Online discussion forums attract users because of their easy access, speech freedom, and ease of communication. Yet there are also possible negative aspects of such communication, including hostile and hate language. While fast and effective solutions for detecting inappropriate language online are constantly being developed, there is little research focusing on the bias of compressed language models that are commonly used nowadays. In this work, we evaluate bias in compressed models trained on Gab and Twitter speech data and estimate to which extent these pruned models capture the relevant context when classifying the input text as hateful, offensive or neutral. Results of our experiments show that transformer-based encoders with 70{\%} or fewer preserved weights are prone to gender, racial, and religious identity-based bias, even if the performance loss is insignificant. We suggest a supervised attention mechanism to counter bias amplification using ground truth per-token hate speech annotation. The proposed method allows pruning BERT, RoBERTa and their distilled versions up to 50{\%} while preserving 90{\%} of their initial performance according to bias and plausibility scores.",
 isbn="978-3-031-30047-9"
 }
@@ -99,6 +172,7 @@ isbn="978-3-031-30047-9"
     pdf = "https://aclanthology.org/2024.findings-naacl.124.pdf",
     doi = "10.18653/v1/2024.findings-naacl.124",
     pages = "1918--1928",
+    bibtex_show={true},
     abstract = "Recent studies introduced effective compression techniques for Large Language Models (LLMs) via post-training quantization or low-bit weight representation. Although quantized weights offer storage efficiency and allow for faster inference, existing works have indicated that quantization might compromise performance and exacerbate biases in LLMs.This study investigates the confidence and calibration of quantized models, considering factors such as language model type and scale as contributors to quantization loss.Firstly, we reveal that quantization with GPTQ to 4-bit results in a decrease in confidence regarding true labels, with varying impacts observed among different language models. Secondly, we observe fluctuations in the impact on confidence across different scales. Finally, we propose an explanation for quantization loss based on confidence levels, indicating that quantization disproportionately affects samples where the full model exhibited low confidence levels in the first place.We make our code and quantized models publicly available.",
 }
 @inproceedings{proskurina-etal-2023-mini,
@@ -124,6 +198,7 @@ isbn="978-3-031-30047-9"
     publisher = "Association for Computational Linguistics",
     pdf = "https://aclanthology.org/2023.conll-babylm.4.pdf",
     doi = "10.18653/v1/2023.conll-babylm.4",
+    bibtex_show={true},
     pages = "58--68",
 }
 @inproceedings{proskurina-etal-2023-bert,
@@ -148,5 +223,6 @@ isbn="978-3-031-30047-9"
     pdf = "https://aclanthology.org/2023.bsnlp-1.15.pdf",
     doi = "10.18653/v1/2023.bsnlp-1.15",
     pages = "123--137",
+    bibtex_show={true},
     abstract = "This paper investigates how Transformer language models (LMs) fine-tuned for acceptability classification capture linguistic features. Our approach is based on best practices of topological data analysis (TDA) in NLP: we construct directed attention graphs from attention matrices, derive topological features from them and feed them to linear classifiers. We introduce two novel features, chordality and the matching number, and show that TDA-based classifiers outperform fine-tuning baselines. We experiment with two datasets, CoLA and RuCoLA, in English and Russian, which are typologically different languages. On top of that, we propose several black-box introspection techniques aimed at detecting changes in the attention mode of the LM{'}s during fine-tuning, defining the LM{'}s prediction confidences, and associating individual heads with fine-grained grammar phenomena. Our results contribute to understanding the behaviour of monolingual LMs in the acceptability classification task, provide insights into the functional roles of attention heads, and highlight the advantages of TDA-based approaches for analyzing LMs.We release the code and the experimental results for further uptake.",
 }
