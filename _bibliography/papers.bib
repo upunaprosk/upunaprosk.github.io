@@ -53,6 +53,37 @@
     abstract = "Many errors in student essays can be explained by influence from the native language (L1). L1 interference refers to errors influenced by a speaker{'}s first language, such as using stadion instead of stadium, reflecting lexical transliteration from Russian. In this work, we address the task of detecting such errors in English essays written by Russian-speaking learners. We introduce RILEC, a large-scale dataset of over 18,000 sentences, combining expert-annotated data from REALEC with synthetic examples generated through rule-based and neural augmentation. We propose a framework for generating L1-motivated errors using generative language models optimized with PPO, prompt-based control, and rule-based patterns. Models fine-tuned on RILEC achieve strong performance, particularly on word-level interference types such as transliteration and tense semantics. We find that the proposed augmentation pipeline leads to a significant performance improvement, making it a potentially valuable tool for learners and teachers to more effectively identify and address such errors."
 }
 
+
+@inproceedings{proskurina-etal-2026-sure,
+    title = "Are You Sure You{'}re Sure? On the Impact of Instruction Tuning on Confidence and Lexical Diversity",
+    author = "Proskurina, Irina  and
+      Kumar, Mayank  and
+      Olabisi Komolafe, Oyindolapo",
+    editor = {Aziz, Wilker  and
+      Berant, Jonathan  and
+      Eikema, Bryan  and
+      Ilia, Evgenia  and
+      de Marneffe, Marie-Catherine  and
+      Plank, Barbara  and
+      Shelmanov, Artem  and
+      Swayamdipta, Swabha  and
+      Tiedemann, J{\"o}rg  and
+      Vazhentsev, Artem  and
+      V{\'a}zquez, Ra{\'u}l  and
+      Zerva, Chrysoula},
+    booktitle = "The Proceedings of the Third Workshop on Uncertainty-Aware {NLP}",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.uncertainlp-main.33/",
+    doi = "10.18653/2026.uncertainlp-main.33",
+    pages = "544--554",
+    ISBN = "979-8-89176-486-6",
+    bibtex_show={true},
+    abstract = "Instruction-tuned language models achieve strong performance across a range of generation tasks but have recently been shown to exhibit verbalized overconfidence, which may manifest in less diverse supporting rationales for incorrect answers. However, whether such overconfidence is associated with rationale consistency remains an open question. In this paper, we study whether changes in the lexical diversity of generated answer rationales accompany changes in model confidence induced by instruction tuning. We evaluate three matched base and instruction-tuned models across question-answering benchmarks and find that instruction tuning consistently increases answer confidence, despite limited changes in predictive accuracy, while degrading likelihood-based calibration. Secondly, we observe a non-uniform effect of instruction tuning on rationale diversity: cross-rationale diversity consistently decreases, whereas surface-level lexical diversity varies in both direction and magnitude across models and benchmarks. Finally, we find that these differences persist after controlling for answer selection and rationale length, confirming that confidence and rationale diversity capture distinct effects of instruction tuning."
+}
+
 @inproceedings{kharlamova-proskurina-2026-rilec,
     title = "{RILEC}: Detection and Generation of {L}1 {R}ussian Interference Errors in {E}nglish Learner Texts",
     author = "Kharlamova, Darya  and
