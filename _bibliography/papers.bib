@@ -15,10 +15,13 @@
     year = "2026",
     address = "Budapest, Hungary",
     publisher = "Association for Computational Linguistics",
+    pdf="https://aclanthology.org/2026.emnlp-main.1300/",
     url = "https://aclanthology.org/2026.emnlp-main.1300/",
     pages = "29600--29623",
     ISBN = "979-8-89176-459-0",
     bibtex_show={true},
+    poster="https://github.com/upunaprosk/debias-llm-compressor/blob/master/assets/EMNLP_2026_main_3795.pdf",
+    code = "https://github.com/upunaprosk/debias-llm-compressor",
     abstract = "Model compression techniques such as pruning and quantization facilitate the efficient deployment and acceleration of Large Language Models (LLMs). However, recent studies show that weight sparsification methods, such as SparseGPT, can amplify existing biases in models, with outputs varying significantly depending on persona cues in the prompt. In this paper, we introduce Debias-SparseGPT, a post-training pruning method incorporating representational debiasing using a second-order term defined over demographically contrasting inputs. We perform empirical validation of our method over a wide range of generative LLMs. Across models and sparsity regimes (25{\%}, 50{\%}, and structured 2:4 sparsity), Debias-SparseGPT consistently reduces pruning-induced bias compared to SparseGPT while preserving model perplexity and zero-shot accuracy. Under the most restrictive 2:4 structured sparsity pattern, which most aggressively degrades model quality, augmenting the calibration set with long-context, content-rich examples further improves both downstream performance and fairness. Overall, Debias-SparseGPT advances the bias-performance trade-off while preserving the computational efficiency of sparse models."
 }
 
@@ -29,6 +32,7 @@ year = "2026",
 doi = {https://doi.org/10.70675/f28a6383z7a0bz4ee1zaf12z4529e4827ba7},
 note = "Thèse de doctorat dirigée par Velcin, Julien et Metzler, Guillaume Informatique Lyon 2 2026",
 url = "https://theses.fr/2026LYO20014/document",
+pdf="https://theses.fr/2026LYO20014/document",
 bibtex_show={true},
 }
 
@@ -44,7 +48,10 @@ bibtex_show={true},
   publisher = {European Language Resources Association (ELRA)},
   editor = {Piperidis, Stelios and Bel, Núria and van den Heuvel, Henk and Ide, Nancy and Krek, Simon and Toral, Antonio},
   doi = {10.63317/3opu4zq9p6pc},
+  pdf="https://arxiv.org/abs/2511.06391",
+  poster="http://www.lrec-conf.org/proceedings/lrec2026/media/posters/470.pdf",
   bibtex_show={true},
+  code = "https://github.com/upunaprosk/hate-prototypes",
 }
 
 
@@ -74,10 +81,12 @@ bibtex_show={true},
     address = "Budapest, Hungary",
     publisher = "Association for Computational Linguistics",
     url = "https://aclanthology.org/2026.uncertainlp-main.33/",
+    pdf="https://aclanthology.org/2026.uncertainlp-main.33/",
     doi = "10.18653/2026.uncertainlp-main.33",
     pages = "544--554",
     ISBN = "979-8-89176-486-6",
     bibtex_show={true},
+    code = "https://github.com/upunaprosk/confidence-rationale-diversity",
     abstract = "Instruction-tuned language models achieve strong performance across a range of generation tasks but have recently been shown to exhibit verbalized overconfidence, which may manifest in less diverse supporting rationales for incorrect answers. However, whether such overconfidence is associated with rationale consistency remains an open question. In this paper, we study whether changes in the lexical diversity of generated answer rationales accompany changes in model confidence induced by instruction tuning. We evaluate three matched base and instruction-tuned models across question-answering benchmarks and find that instruction tuning consistently increases answer confidence, despite limited changes in predictive accuracy, while degrading likelihood-based calibration. Secondly, we observe a non-uniform effect of instruction tuning on rationale diversity: cross-rationale diversity consistently decreases, whereas surface-level lexical diversity varies in both direction and magnitude across models and benchmarks. Finally, we find that these differences persist after controlling for answer selection and rationale length, confirming that confidence and rationale diversity capture distinct effects of instruction tuning."
 }
 
@@ -100,6 +109,9 @@ bibtex_show={true},
     doi = "10.63317/5bas35hntskv",
     pages = "10826--10837",
     bibtex_show={true},
+    pdf="https://aclanthology.org/2026.lrec-1.848/",
+    code = "https://github.com/harlamovads/RILEC/",
+    dataset = "https://huggingface.co/datasets/Zlovoblachko/RILEC",
     abstract = "Many errors in student essays can be explained by influence from the native language (L1). L1 interference refers to errors influenced by a speaker{'}s first language, such as using stadion instead of stadium, reflecting lexical transliteration from Russian. In this work, we address the task of detecting such errors in English essays written by Russian-speaking learners. We introduce RILEC, a large-scale dataset of over 18,000 sentences, combining expert-annotated data from REALEC with synthetic examples generated through rule-based and neural augmentation. We propose a framework for generating L1-motivated errors using generative language models optimized with PPO, prompt-based control, and rule-based patterns. Models fine-tuned on RILEC achieve strong performance, particularly on word-level interference types such as transliteration and tense semantics. We find that the proposed augmentation pipeline leads to a significant performance improvement, making it a potentially valuable tool for learners and teachers to more effectively identify and address such errors."
 }
 
@@ -111,13 +123,16 @@ bibtex_show={true},
       archivePrefix={arXiv},
       primaryClass={cs.CL},
       bibtex_show={true},
+      pdf="https://arxiv.org/abs/2509.15206",
+      code="https://github.com/upunaprosk/fair-gptq",
+      note="Accepted for publication in TACL. Pre-MIT Press publication version.",
       url={https://arxiv.org/abs/2509.15206},
 }
 
 @inproceedings{leteno-etal-2025-histoiresmorales,
     title = "{HISTOIRESMORALES}: A {F}rench Dataset for Assessing Moral Alignment",
-    author = "Leteno, Thibaud  and
-      Proskurina, Irina  and
+    author = "Leteno*◇, Thibaud  and
+      Proskurina*◇, Irina  and
       Gourru, Antoine  and
       Velcin, Julien  and
       Laclau, Charlotte  and
@@ -136,6 +151,8 @@ bibtex_show={true},
     pages = "2590--2612",
     ISBN = "979-8-89176-189-6",
     bibtex_show={true},
+    dataset="https://huggingface.co/datasets/LabHC/histoires_morales",
+    website="https://histoires-morales.github.io/",
     abstract = "Aligning language models with human values is crucial, especially as they become more integrated into everyday life. While models are often adapted to user preferences, it is equally important to ensure they align with moral norms and behaviours in real-world social situations. Despite significant progress in languages like English and Chinese, French has seen little attention in this area, leaving a gap in understanding how LLMs handle moral reasoning in this language. To address this gap, we introduce HistoiresMorales, a French dataset derived from MoralStories, created through translation and subsequently refined with the assistance of native speakers to guarantee grammatical accuracy and adaptation to the French cultural context. We also rely on annotations of the moral values within the dataset to ensure their alignment with French norms. HistoiresMorales covers a wide range of social situations, including differences in tipping practices, expressions of honesty in relationships, and responsibilities toward animals. To foster future research, we also conduct preliminary experiments on the alignment of multilingual models on French and English data and the robustness of the alignment. We find that while LLMs are generally aligned with human moral norms by default, they can be easily influenced with user-preference optimization for both moral and immoral data."
 }
 @inproceedings{cherniavskii-etal-2022-acceptability,
@@ -201,6 +218,7 @@ isbn="978-3-031-30047-9"
     doi = "10.18653/v1/2024.findings-naacl.124",
     pages = "1918--1928",
     bibtex_show={true},
+    slides="https://www.anr-dike.fr/slides/naacl24/",
     abstract = "Recent studies introduced effective compression techniques for Large Language Models (LLMs) via post-training quantization or low-bit weight representation. Although quantized weights offer storage efficiency and allow for faster inference, existing works have indicated that quantization might compromise performance and exacerbate biases in LLMs.This study investigates the confidence and calibration of quantized models, considering factors such as language model type and scale as contributors to quantization loss.Firstly, we reveal that quantization with GPTQ to 4-bit results in a decrease in confidence regarding true labels, with varying impacts observed among different language models. Secondly, we observe fluctuations in the impact on confidence across different scales. Finally, we propose an explanation for quantization loss based on confidence levels, indicating that quantization disproportionately affects samples where the full model exhibited low confidence levels in the first place.We make our code and quantized models publicly available.",
 }
 @inproceedings{proskurina-etal-2023-mini,
