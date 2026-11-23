@@ -7,7 +7,27 @@ tags: formatting links
 categories: sample-posts
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. [Pinterest](https://www.pinterest.com) DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+### Quantization: from reconstruction objctives to Fair-GPTQ
+
+Fair-GPTQ is motivated by extnsice existing studies showing that quantization zan result is singificant performanc loss on safety benchamrks. 
+
+### Quantizationo intro
+
+### Reconstruction Objectivs and dequatnztiation
+
+### Fair-GPTQ quantization
+
+
+### Speed-up
+
+
+### Empirical validation
+
+
+### Future work
+
+
+
 
 #### Hipster list
 
