@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: "Research Engineer @ Jean Monnet University, Hubert Curien Laboratory"
+subtitle: "Senior NLP Research Scientist | PhD in Computer Science"
 
 profile:
   align: right
@@ -15,10 +15,12 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am currently a Research Engineer at the [Laboratory Hubert Curien](https://laboratoirehubertcurien.univ-st-etienne.fr/en/index.html) at Jean Monnet University, supervised by [Prof. Antoine Gourru](https://antoinegourru.github.io/). Previously, I was a PhD student at the ERIC Lab, part of the University of Lyon and Lyon 2, under the supervision of [Prof. Julien Velcin](https://velcin.github.io) and [Prof. Guillaume Metzler](https://guillaumemetzler.github.io).
 
-My research focuses on the compression and efficiency of large language models, particularly regarding potential unsafe generations.
+I am an NLP researcher with a PhD in Computer Science from the University of Lyon. My research focuses on efficient language models, including quantization, pruning, model reliability, and synthetic data.
 
-I am also a member of the Cohere Community. Feel free to reach out if you are interested in discussing related topics or potential collaborations !
+I am currently **open to Senior NLP/LLM Research Scientist opportunities in Moscow**. You can find my [CV here](/files/Irina_Proskurina_CV.pdf) or contact me via [Telegram](https://t.me/i_proskurina).
+Previously, I worked as a Research Engineer at the [Laboratory Hubert Curien](https://laboratoirehubertcurien.univ-st-etienne.fr/en/index.html) at Jean Monnet University and as a researcher at the ERIC Laboratory (University of Lyon).
+I am also a member of the Cohere Labs Open Science Community and welcome research collaborations.
 
-Before starting my PhD, I earned an MSc in Computer Science through a double-degree program between the Higher School of Economics (HSE University) and the University of Clermont-Ferrand. During this time, I interned at the Learner Corpora Lab at HSE University, where I collaborated with corpus and computational linguists on grammatical error detection in learner essays and contributed to improving the Grazie tool in partnership with JetBrains. Later, I worked at the Laboratory for Models and Methods of Computational Pragmatics, also part of HSE University, where I explored the use of topological data analysis for acceptability judgments.
+My current research interests include efficient language models, model compression, small language models, and model reliability.
+Before starting my PhD, I earned an MSc in Computer Science through a double-degree program between the Higher School of Economics (HSE University) and the University of Clermont. During this time, I interned at the Learner Corpora Lab at HSE University, where I collaborated with corpus and computational linguists on grammatical error detection in learner essays and contributed to improving the Grazie tool in partnership with JetBrains. Later, I worked at the Laboratory for Models and Methods of Computational Pragmatics, also part of HSE University, where I worked on topological data analysis.
